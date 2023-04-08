@@ -9,5 +9,8 @@ module.exports = ({ env }) => ({
       password: env('PGPASSWORD', 'password'),
       ssl: env.bool(true),
     },
+    token: {
+      salt: env('TRANSFER_TOKEN_SALT', 'your-transfer-token-salt'),
+    },   
   },
 });
