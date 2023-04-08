@@ -26,6 +26,12 @@
     "title": {
       "type": "string",
       "required": true
+    },
+    "category_images": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category-image.category-image",
+      "mappedBy": "category"
     }
   }
 }
